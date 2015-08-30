@@ -1,13 +1,20 @@
 body {
     /*padding-top: 120px;*/
     /*padding-bottom: 20px;*/
-
     font-family: 'Titillium Web', sans-serif;
 }
 
 .navbar {
-    height: 120px;
     background-color: #ffffff;
+    margin-bottom: 0;
+}
+
+#navbar {
+    margin-top: 20px;
+}
+
+#navbar ul li a:hover {
+    background-color: transparent;
 }
 
 /*.navbar-brand {*/
@@ -31,70 +38,62 @@ h1, h2, h3, h4, h5, h6 {
     min-height: 70px;
 }
 
-.jcarousel-wrapper {
-    margin: 0 auto;
-    position: relative;
-    width: 800px;
-    height: 600px;
-}
+/* Carousel */
 
-/** Carousel **/
+.jcarousel-wrapper {
+    width: 100%;
+}
 
 .jcarousel {
     position: relative;
+    margin: 0 auto;
+    /*margin-top: 30px;*/
+    /*margin-bottom: 14px;*/
     overflow: hidden;
 }
 
 .jcarousel ul {
-    width: 20000em;
     position: relative;
-    list-style: none;
     margin: 0;
     padding: 0;
+    width: 20000em;
+    list-style: none;
 }
 
-.jcarousel li {
+.jcarousel-prev, .jcarousel-next {
+    position: absolute;
+    margin-top: -82px;
+}
+
+@media (max-width: 768px) {
+    .jcarousel-prev, .jcarousel-next {
+        margin-top: -136px;
+    }
+}
+
+.jcarousel-next {
+    right: 15px;
+}
+
+.jcarousel-prev, .jcarousel-next {
+    vertical-align: top;
+    font-size: 20px;
+    color: #A8A8A8;
+}
+
+.jcarousel-prev:hover, .jcarousel-next:hover {
+    color: #949494;
+}
+
+.jcarousel > ul > li {
     float: left;
 }
 
-/** Carousel Controls **/
-
-.jcarousel-control-prev,
-.jcarousel-control-next {
-    position: absolute;
-    top: 300px;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    background: #4E443C;
-    color: #fff;
-    text-decoration: none;
-    text-shadow: 0 0 1px #000;
-    font: 24px/27px Arial, sans-serif;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    border-radius: 30px;
-    -webkit-box-shadow: 0 0 2px #999;
-    -moz-box-shadow: 0 0 2px #999;
-    box-shadow: 0 0 2px #999;
+@media (max-width: 767px) {
+    .jcarousel .wrapper-thumbnail {
+        float: left;
+        margin: auto;
+    }
 }
 
-.jcarousel-control-prev {
-    left: -50px;
-}
-
-.jcarousel-control-next {
-    right: -50px;
-}
-
-.jcarousel-control-prev:hover span,
-.jcarousel-control-next:hover span {
-    display: block;
-}
-
-.jcarousel-control-prev.inactive,
-.jcarousel-control-next.inactive {
-    opacity: .5;
-    cursor: default;
-}
 
