@@ -9,7 +9,7 @@ $(function() {
       autostart: true
     });
 
-  $('.jcarousel-control-prev')
+  $('.jcarousel-prev')
     .on('jcarouselcontrol:active', function() {
       $(this).removeClass('inactive');
     })
@@ -20,7 +20,7 @@ $(function() {
       target: '-=1'
     });
 
-  $('.jcarousel-control-next')
+  $('.jcarousel-next')
     .on('jcarouselcontrol:active', function() {
       $(this).removeClass('inactive');
     })
