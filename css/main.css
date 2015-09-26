@@ -21,6 +21,11 @@ body {
     background-color: #2C3394;
 }
 
+.section {
+    padding-bottom:30px;
+    padding-top:30px;
+}
+
 /* ------------ HEADER ------------ */
 
 .site-header {

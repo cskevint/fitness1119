@@ -16,6 +16,10 @@ $(document).ready(function(){
     $('.nav-bar').removeClass("nav-list");
   });
 
+  $('.nav-bar a').click(function(){
+    $('.nav-bar').removeClass('nav-list');
+  });
+
   $(".truncate").each(function(i, el){
     var pTags = $(el).find("p");
     function toggle(show) {
