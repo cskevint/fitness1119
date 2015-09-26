@@ -94,6 +94,24 @@ body {
     }
 }
 
+.nav-list {
+    display: block;
+    position:fixed;
+    top: 80px;
+    z-index:10;
+    background-color: #FFFFFF;
+    width:100%;
+}
+
+.nav-list ul li.left {
+    display:block;
+    clear:both;
+}
+
+.nav-list ul li.right {
+    display: none;
+}
+
 /* ------------ MOBILE NAV ------------ */
 
 .nav-mobile {

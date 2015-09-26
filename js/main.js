@@ -6,4 +6,14 @@ $(document).ready(function(){
     infinite: true,
     dots: false
   });
+
+  $(".nav-mobile .menu").click(function(){
+    $('.nav-bar').toggleClass("nav-list");
+    return false;
+  });
+
+  $(window).scroll(function(){
+    $('.nav-bar').removeClass("nav-list");
+  });
+
 });
