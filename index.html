@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="css/main.css" type="text/css"/>
 
+    <link rel="stylesheet" href="slick/slick.css" type="text/css"/>
+    <link rel="stylesheet" href="slick/slick-theme.css" type="text/css"/>
+
     <!--[if lt IE 9]>
         <!--<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>-->
         <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
@@ -48,22 +51,14 @@
 </div>
 
 <div class="backDarkGray">
-    <div class="container" style="position:relative">
-        <div class="jcarousel-wrapper">
-            <div class="jcarousel" data-jcarousel="true">
-                <ul>
-                    <li><img src="img/slideshow/Studio%20Outside.jpg" class="img-responsive" alt=""></li>
-                    <li><img src="img/slideshow/Cat1.jpg" class="img-responsive" alt=""></li>
-                    <li><img src="img/slideshow/mary.jpg" class="img-responsive" alt=""></li>
-                    <li><img src="img/slideshow/TRX.jpg" class="img-responsive" alt=""></li>
-                    <li><img src="img/slideshow/KB%20-%20TRX.jpg" class="img-responsive" alt=""></li>
-                    <li><img src="img/slideshow/Girls.JPG" class="img-responsive" alt=""></li>
-                </ul>
-            </div>
-        </div>
-        <div class="jcarousel-controls">
-            <a class="jcarousel-prev" href="#"><span class="fa fa-chevron-circle-left fa-lg"></span></a>
-            <a class="jcarousel-next" href="#"><span class="fa fa-chevron-circle-right fa-lg"></span></a>
+    <div class="container">
+        <div class="carousel">
+            <div><img src="img/slideshow/Studio%20Outside.jpg" class="img-responsive" alt=""></div>
+            <div><img data-lazy="img/slideshow/Cat1.jpg" class="img-responsive" alt=""></div>
+            <div><img data-lazy="img/slideshow/mary.jpg" class="img-responsive" alt=""></div>
+            <div><img data-lazy="img/slideshow/TRX.jpg" class="img-responsive" alt=""></div>
+            <div><img data-lazy="img/slideshow/KB%20-%20TRX.jpg" class="img-responsive" alt=""></div>
+            <div><img data-lazy="img/slideshow/Girls.JPG" class="img-responsive" alt=""></div>
         </div>
     </div>
 </div>
@@ -333,8 +328,9 @@
 <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 <script src="js/vendor/bootstrap.min.js"></script>
-<script src="js/vendor/jquery.jcarousel.min.js"></script>
-<script src="js/vendor/jquery.jcarousel-autoscroll.min.js"></script>
+<!--<script src="js/vendor/jquery.jcarousel.min.js"></script>-->
+<!--<script src="js/vendor/jquery.jcarousel-autoscroll.min.js"></script>-->
+<script src="slick/slick.js"></script>
 <script src="js/main.js"></script>
 
 </body>
